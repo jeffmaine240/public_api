@@ -19,6 +19,17 @@ app = FastAPI(
     lifespan= life_span,
 )
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"], 
+    allow_headers=["*"],  
+)
+
+
 app.include_router(retrieve_router, prefix=f"/api/{version}/public", tags=["public"])
 
 
