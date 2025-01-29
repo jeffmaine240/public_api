@@ -21,8 +21,8 @@ To run this project locally, follow the steps below:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+   git clone https://github.com/jeffmaine240/public_api.git
+   cd public_api
 
 2. Create a virtual environment (recommended):
     ```bash
@@ -37,13 +37,13 @@ To run this project locally, follow the steps below:
 ### Run Locally
 4. To run the FastAPI app locally:
 
-        fastapi dev src/    #if you have fastapi - cli
-
-        or
-
-        uvicorn src:app --reload
-
-
+    * If you have fastapi-cli installed:
+         ```bash
+         fastapi dev src/
+    or 
+    * Use uvicorn directly:
+    ```bash
+         uvicorn src:app --reload
 
 This will start the app at http://127.0.0.1:8000 (default). The --reload flag ensures the server reloads automatically when you make changes to the code.
 
