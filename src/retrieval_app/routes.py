@@ -12,5 +12,4 @@ async def get_details() -> UserDetails:
         "current_datetime": datetime.now(utc).isoformat(),
         "github_url": "https://github.com/jeffmaine240/public_api"
     }
-
     return message
