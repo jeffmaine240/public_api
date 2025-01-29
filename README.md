@@ -48,12 +48,12 @@ To run this project locally, follow the steps below:
 This will start the app at http://127.0.0.1:8000 (default). The --reload flag ensures the server reloads automatically when you make changes to the code.
 
 ### Testing Locally
-Once the server is running, open your browser and visit:
+Once the server is running, open your browser and visit through a GET request:
 
     http://127.0.0.1:8000/api/v1/public/
 
 
-You should receive the following JSON response:
+You should receive the following JSON response and response status of (200 ok):
 
     {
         "email": "oyeniyij43@gmail.com",
